@@ -8,14 +8,14 @@ console.log(database)
 
 //Crear una instancia
 
-//const Enterteinment =
 
-const ModeloPelicula = database.define('Película',{
+
+const ModeloPelicula = database.define('pelicula',{
     title: {type: DataTypes.STRING},
     content: {type: DataTypes.STRING}
 })
 
-console.log(ModeloPelicula)
-console.log(typeof(ModeloPelicula))
+//console.log(ModeloPelicula)
+//console.log(typeof(ModeloPelicula))
 
 module.exports.ModeloPelicula = ModeloPelicula

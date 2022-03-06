@@ -6,6 +6,7 @@ const {ModeloPelicula} = require('./models');
 const getAllMovies = async(req,res)=>{
     try{
         const Peliculas = await ModeloPelicula.findAll()
+        res.json(Peliculas);
     }catch(error){
         res.json({message: "No se encontró instancia"})
     }
@@ -42,7 +43,7 @@ const updateOneMovie = async(req,res)=>{
         await ModeloPelicula.update(req.body({
             where: {id: req.params.id}
         }));
-        res.json({message: "Reigstro actualizad"});
+        res.json({message: "Reigstro actualizado"});
     }catch(error){
         res.json({message: "No se ha podido actualizar el registro"})
     }

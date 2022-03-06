@@ -28,20 +28,7 @@ server_app.listen(server_app.get('port'),()=>{
     console.log('server on port',server_app.get('port'))
 });
 
-server_app.use('/movies',routes.inicio);
+server_app.use('/movie',routes.inicio);
 console.log("Terminado")
 //Express es una clase configurable, un servidor http
 //Nota: Se necesita crear una instancia
-
-// class car{
-//     constructor(modelo,año){
-//         this.modelo = modelo;
-//         this.año = año;
-//     }
-// }
-
-// carro1 = new car("toyota",2022);
-// console.log(typeof(car));
-// console.log(car);
-// console.log(typeof(carro1));
-// console.log(carro1);
